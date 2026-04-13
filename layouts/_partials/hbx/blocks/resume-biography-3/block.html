@@ -204,23 +204,13 @@
 
           {{/* Name with optional ruby pronunciation */}}
           {{ if and $profile.title $name_pronunciation }}
-            <h1 class="{{ $name_class }} font-black text-gray-900 dark:text-white leading-tight" style="font-family: Georgia, 'Times New Roman', serif;">
+            <h1 class="text-2xl sm:text-3xl font-normal text-gray-900 dark:text-white leading-tight" style="font-family: Georgia, 'Times New Roman', serif;">
               <ruby class="hb-ruby-name">{{ $profile.title }}<rt>{{ $name_pronunciation }}</rt></ruby>
             </h1>
           {{ else }}
-            <h1 class="{{ $name_class }} font-black text-gray-900 dark:text-white leading-tight" style="font-family: Georgia, 'Times New Roman', serif;">
+            <h1 class="text-2xl sm:text-3xl font-normal text-gray-900 dark:text-white leading-tight" style="font-family: Georgia, 'Times New Roman', serif;">
               {{ $profile.title }}
             </h1>
-          {{ end }}
-          
-          {{ $pronouns := "" }}
-          {{ with $profile.pronouns }}
-            {{ if eq (printf "%T" .) "string" }}
-              {{ $pronouns = . }}
-            {{ end }}
-          {{ end }}
-          {{ with $pronouns }}
-            <p class="text-lg text-gray-600 dark:text-gray-400">({{ . }})</p>
           {{ end }}
           
           {{ $role_text := "" }}
@@ -230,7 +220,7 @@
             {{ end }}
           {{ end }}
           {{ with $role_text }}
-            <p class="text-2xl font-semibold text-primary-600 dark:text-primary-400">{{ . | markdownify | emojify }}</p>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-300">{{ . | markdownify | emojify }}</p>
           {{ end }}
           
           {{ $affiliations_raw := $profile.affiliations }}
@@ -258,7 +248,7 @@
             {{ $aff_name = strings.TrimSpace $aff_name }}
             {{ $aff_url = strings.TrimSpace $aff_url }}
             {{ if $aff_name }}
-              <p class="text-lg text-gray-700 dark:text-gray-300">
+              <p class="text-base text-primary-600 dark:text-primary-400">
                 {{ if $aff_url }}
                   {{ $link := $aff_url }}
                   {{ $scheme := (urls.Parse $link).Scheme }}
