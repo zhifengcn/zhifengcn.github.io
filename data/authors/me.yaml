@@ -8,7 +8,7 @@ name:
   alternate: ''
   pronunciation: ''
   pronouns: ''
-role: Ph.D. Student of Health Geography
+role: PhD Student of Health Geography
 bio: |
   I am a PhD student at the [WorldPop](https://www.worldpop.org/), [University of Southampton](https://www.southampton.ac.uk/). 
   My research focuses on human behaviours and population health. I combined geospatial data sciences with epidemiology and 
@@ -26,20 +26,10 @@ interests:
 education:
   - degree: PhD in Geography
     institution: University of Southampton
-    start: 2015-09-01
-    end: 2019-06-30
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+  - degree: MSc in Cartography and Geographical Information System
+    institution: IGSNRR, Chinese Academy of Sciences
+  - degree: BSc in Geographical Information Science
+    institution: Hohai University
 
 experience:
   - role: Senior AI Research Scientist
