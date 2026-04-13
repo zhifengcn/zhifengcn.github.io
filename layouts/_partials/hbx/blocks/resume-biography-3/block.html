@@ -82,7 +82,7 @@
   {{ end }}
 {{ end }}
 
-<div class="resume-biography py-6 px-6 sm:py-8 md:py-10 lg:py-8 xl:py-10 relative overflow-hidden">
+<div class="resume-biography py-6 px-8 sm:py-8 md:py-10 lg:py-8 xl:py-10 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-24 items-start">
@@ -350,7 +350,7 @@
         {{ end }}
         {{ with $bio_content }}
         <div class="mb-12">
-          <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed" style="font-family: Georgia, 'Times New Roman', serif;">
+          <div class="prose prose-lg dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed" style="font-family: Georgia, 'Times New Roman', serif;">
             <div class="bio-text" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
               {{ . }}
             </div>
