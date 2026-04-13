@@ -32,7 +32,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: light
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "default"
     # Optional: Override theme pack colors
@@ -68,7 +68,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "md"
+    radius: "none"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     spacing: "comfortable"
     # Avatar shape in author profiles
@@ -85,11 +85,11 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: center                       # left | center | right
+    align: right                       # left | center | right
     # Feature toggles
     search: true
-    theme_toggle: true
-    theme_picker: true
+    theme_toggle: false
+    theme_picker: false
     language_switcher: true
     # Call-to-action button
     cta:
@@ -161,7 +161,7 @@ hugoblox:
       enable: true
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
