@@ -84,11 +84,11 @@
 
 <div class="resume-biography py-6 px-4 sm:py-8 md:py-10 lg:py-8 xl:py-10 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-0 sm:px-0 lg:px-0">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
       
       {{/* Left Column: Flexible span */}}
-      <div class="md:col-span-3 flex flex-col items-center text-center space-y-6 md:space-y-8">
+      <div class="md:col-span-4 flex flex-col items-center text-center space-y-6 md:space-y-8">
         
         {{/* Banner Image */}}
         {{ $img := "" }}
@@ -337,7 +337,7 @@
       </div>
 
       {{/* Right Column: Flexible span */}}
-      <div class="md:col-span-9">
+      <div class="md:col-span-">
         
         {{/* Bio Section */}}
         {{ $bio_content := "" }}
@@ -356,37 +356,6 @@
             </div>
           </div>
         </div>
-        {{ end }}
-
-        {{/* CV Download Button */}}
-        {{ $button_raw := index $content "button" }}
-        {{ if and $button_raw (reflect.IsMap $button_raw) }}
-          {{ $button_text := "" }}
-          {{ $button_url := "" }}
-          {{ with index $button_raw "text" }}{{ $button_text = printf "%v" . }}{{ end }}
-          {{ with index $button_raw "url" }}{{ $button_url = printf "%v" . }}{{ end }}
-          {{ $button_text = strings.TrimSpace $button_text }}
-          {{ $button_url = strings.TrimSpace $button_url }}
-          {{ if and $button_text $button_url }}
-            {{ $button_link := $button_url }}
-            {{ $scheme := (urls.Parse $button_link).Scheme }}
-            {{ $target := "" }}
-            {{ if not $scheme }}
-              {{ if not (hasPrefix $button_link "#") }}
-                {{ $button_link = $button_link | relLangURL }}
-              {{ end }}
-              {{ if eq (path.Ext $button_link) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
-            {{ else if in (slice "http" "https") $scheme }}
-              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-            {{ end }}
-            <div class="mb-16">
-              <a href="{{ $button_link | safeURL }}" {{ $target | safeHTMLAttr }}
-                 class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                {{ partial "functions/get_icon" (dict "name" "document-arrow-down" "attributes" "class='w-5 h-5 mr-3'") }}
-                {{ $button_text }}
-              </a>
-            </div>
-          {{ end }}
         {{ end }}
 
         {{/* Interests & Education Side-by-Side */}}
