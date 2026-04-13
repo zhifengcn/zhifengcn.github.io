@@ -15,9 +15,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      button: ''
-        # text: Download CV
-        # url: uploads/resume.pdf
       headings:
         education: ''
         interests: ''
