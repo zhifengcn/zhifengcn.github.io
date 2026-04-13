@@ -1,0 +1,75 @@
+/* ── Font: Arial throughout ── */
+body, h1, h2, h3, h4, h5, h6, p, a, li, nav, .navbar {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* ── Remove ALL purple/lavender backgrounds — force pure white ── */
+body,
+main,
+section,
+.page-body,
+.wg-biography,
+.wg-about,
+.hero-media,
+.universal-wrapper,
+[class*="bg-"],
+[class*="background"] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* ── Navbar: white background, no shadow ── */
+header,
+nav,
+.navbar,
+.navbar-light,
+[class*="navbar"] {
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+/* ── Profile left panel: remove purple card background ── */
+.avatar-wrapper,
+.portrait-title,
+[class*="profile"],
+[class*="author-card"] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* ── Education cards: remove boxes and borders ── */
+[class*="education"] .card,
+[class*="education"] [class*="card"],
+.card {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* ── Education items: vertical text-only list ── */
+[class*="education"] ul,
+[class*="education"] ol {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+/* ── Remove card grid layout (3-column boxes) ── */
+[class*="education"] .row,
+[class*="education"] [class*="grid"] {
+  display: block !important;
+}
+
+/* ── Section headings ── */
+.wg-biography h1,
+.wg-biography h2,
+section h2 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+}
