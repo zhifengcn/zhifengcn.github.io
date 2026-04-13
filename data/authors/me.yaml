@@ -5,15 +5,14 @@ name:
   display: Zhifeng Cheng
   given: Zhifeng
   family: Cheng
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-role: Postgraduate Research Student
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+role: Ph.D. Student of Health Geography
 bio: |
   I am a PhD student at the [WorldPop](https://www.worldpop.org/), [University of Southampton](https://www.southampton.ac.uk/). 
-  I am passionate about helping cities better understand and govern the complex networks and technologies that shape urban life.  
-  My research focuses on infectious disease modelling, epidemiology, 
-  and the intersection of network science and public health.
+  My research focuses on human behaviours and population health. I combined geospatial data sciences with epidemiology and 
+  computational social science for an integrated view of environmental and policy impacts on human society.
 
 affiliations:
   - name: WorldPop, University of Southampton
@@ -58,36 +57,3 @@ experience:
     end: 2019-12-31
     summary: |
       Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
-
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
-languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
