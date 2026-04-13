@@ -14,8 +14,36 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
+      text: |
+        <div style="display: flex; gap: 4rem; font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; line-height: 1.8; margin-top: 2rem;">
+ 
+          <div style="flex: 1;">
+ 
+          **Interests**
+ 
+          - Infectious disease modelling and epidemiology
+          - Network science and complex systems
+          - Causal inference and Bayesian methods
+          - Climate and health interactions
+ 
+          </div>
+ 
+          <div style="flex: 1;">
+ 
+          **Education**
+ 
+          🎓 **PhD in Geography**, 2024 (expected)
+          <br>WorldPop, University of Southampton
+ 
+          🎓 **MSc in [Your MSc]**, 20XX
+          <br>[Your University]
+ 
+          🎓 **BSc in [Your BSc]**, 20XX
+          <br>[Your University]
+ 
+          </div>
+ 
+        </div>
       button:
         text: Download CV
         url: uploads/resume.pdf
@@ -37,42 +65,6 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
-    content:
-      title: ''
-      text: |
-        <div style="display: flex; gap: 4rem; font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; line-height: 1.8;">
- 
-          <div style="flex: 1;">
- 
-          **Interests**
- 
-          - Infectious disease modelling and epidemiology
-          - Network science and complex systems
-          - Causal inference and Bayesian methods
-          - Climate and health interactions
- 
-          </div>
- 
-          <div style="flex: 1;">
- 
-          **Education**
- 
-          🎓 **PhD in Geography**, 2024 (expected)
-          WorldPop, University of Southampton
- 
-          🎓 **MSc in [Your MSc]**, 20XX
-          [Your University]
- 
-          🎓 **BSc in [Your BSc]**, 20XX
-          [Your University]
- 
-          </div>
- 
-        </div>
-    design:
-      background:
-        color: white
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
