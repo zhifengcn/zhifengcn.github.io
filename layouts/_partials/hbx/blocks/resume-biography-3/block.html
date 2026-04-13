@@ -82,10 +82,10 @@
   {{ end }}
 {{ end }}
 
-<div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden">
+<div class="resume-biography py-6 px-4 sm:py-8 md:py-10 lg:py-12 xl:py-16 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
   <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-16 items-start">
       
       {{/* Left Column: Flexible span */}}
       <div class="md:col-span-4 flex flex-col items-center text-center space-y-6 md:space-y-8">
@@ -355,7 +355,7 @@
               {{ partial "functions/get_icon" (dict "name" "identification" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
             </div>
             {{ $i18n_about := i18n "about_me" }}
-            {{ $about_default := cond (eq $i18n_about "about_me") "Professional Summary" $i18n_about }}
+            {{ $about_default := cond (eq $i18n_about "about_me") "Bio" $i18n_about }}
             {{ $about_heading := $about_default }}
             {{ $about_heading_raw := index $headings "about" }}
             {{ if eq (printf "%T" $about_heading_raw) "string" }}
@@ -436,10 +436,7 @@
               {{ range $interests }}
               {{ $interest := strings.TrimSpace (printf "%v" .) }}
               {{ if $interest }}
-              <li class="flex items-start gap-2">
-                <span class="text-primary-600 dark:text-primary-400 mt-1">📘</span>
-                <span>{{ $interest | markdownify | emojify }}</span>
-              </li>
+              <li class="list-disc ml-4">{{ $interest | markdownify | emojify }}</li>
               {{ end }}
               {{ end }}
             </ul>
