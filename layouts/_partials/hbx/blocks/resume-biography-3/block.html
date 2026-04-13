@@ -405,83 +405,7 @@
           {{ end }}
         {{ end }}
 
-        {{/* Education Section */}}
-        {{ $education_raw := $profile.education }}
-        {{ $education := slice }}
-        {{ if reflect.IsSlice $education_raw }}
-          {{ $education = $education_raw }}
-        {{ end }}
-        {{ if gt (len $education) 0 }}
-        <div class="mb-16">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
-              {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-            </div>
-            {{ $education_heading := i18n "education" }}
-            {{ $education_heading_raw := index $headings "education" }}
-            {{ if eq (printf "%T" $education_heading_raw) "string" }}
-              {{ $education_heading_raw = strings.TrimSpace $education_heading_raw }}
-              {{ if ne $education_heading_raw "" }}
-                {{ $education_heading = $education_heading_raw }}
-              {{ end }}
-            {{ end }}
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $education_heading | markdownify }}</h3>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {{ range $education }}
-            {{ if reflect.IsMap . }}
-            {{ $degree := "" }}
-            {{ $degreeRaw := index . "degree" | default (index . "area") }}
-            {{ if ne $degreeRaw nil }}{{ $degree = printf "%v" $degreeRaw }}{{ end }}
-            {{ $year := "" }}
-            {{ with index . "year" }}{{ $year = printf "%v" . }}{{ end }}
-            {{ $start := "" }}
-            {{ with index . "start" }}{{ $start = printf "%v" . }}{{ end }}
-            {{ $end := "" }}
-            {{ with index . "end" }}{{ $end = printf "%v" . }}{{ end }}
-            {{ $institution := "" }}
-            {{ with index . "institution" }}{{ $institution = printf "%v" . }}{{ end }}
-            {{ $icon := "" }}
-            {{ $iconRaw := index . "icon" }}
-            {{ if eq (printf "%T" $iconRaw) "string" }}
-              {{ $icon = $iconRaw }}
-            {{ end }}
-            <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
-              <div class="flex gap-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md">
-                  {{ if $icon }}
-                    {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-                  {{ else }}
-                    {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-                  {{ end }}
-                </div>
-                <div class="flex-1 flex-grow">
-                  {{ if $degree }}
-                  <p class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                    {{ $degree }}
-                  </p>
-                  {{ end }}
-                  {{ if $year }}
-                    <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">{{ $year }}</p>
-                  {{ else if $start }}
-                    <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                      {{ $start }}
-                      {{ if $end }}<br>{{ $end }}{{ end }}
-                    </p>
-                  {{ end }}
-                  {{ if $institution }}
-                    <p class="text-gray-700 dark:text-gray-300 text-base">{{ $institution }}</p>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
-
-        {{/* Interests Section */}}
+        {{/* Interests & Education Side-by-Side */}}
         {{ $interests_raw := $profile.interests }}
         {{ $interests := slice }}
         {{ if reflect.IsSlice $interests_raw }}
@@ -489,13 +413,17 @@
         {{ else if eq (printf "%T" $interests_raw) "string" }}
           {{ $interests = slice $interests_raw }}
         {{ end }}
-        {{ if gt (len $interests) 0 }}
-        <div>
-          <div class="flex items-center gap-4 mb-8">
-            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
-              {{ partial "functions/get_icon" (dict "name" "sparkles" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-            </div>
-            {{ $interests_heading := i18n "interests" }}
+        {{ $education_raw := $profile.education }}
+        {{ $education := slice }}
+        {{ if reflect.IsSlice $education_raw }}
+          {{ $education = $education_raw }}
+        {{ end }}
+        {{ if or (gt (len $interests) 0) (gt (len $education) 0) }}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {{/* Interests Column */}}
+          {{ if gt (len $interests) 0 }}
+          <div>
+            {{ $interests_heading := i18n "interests" | default "Interests" }}
             {{ $interests_heading_raw := index $headings "interests" }}
             {{ if eq (printf "%T" $interests_heading_raw) "string" }}
               {{ $interests_heading_raw = strings.TrimSpace $interests_heading_raw }}
@@ -503,21 +431,54 @@
                 {{ $interests_heading = $interests_heading_raw }}
               {{ end }}
             {{ end }}
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $interests_heading | markdownify }}</h3>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white tracking-tight mb-4">{{ $interests_heading | markdownify }}</h3>
+            <ul class="space-y-2 text-base text-gray-700 dark:text-gray-300">
+              {{ range $interests }}
+              {{ $interest := strings.TrimSpace (printf "%v" .) }}
+              {{ if $interest }}
+              <li class="flex items-start gap-2">
+                <span class="text-primary-600 dark:text-primary-400 mt-1">📘</span>
+                <span>{{ $interest | markdownify | emojify }}</span>
+              </li>
+              {{ end }}
+              {{ end }}
+            </ul>
           </div>
-          <div class="flex flex-wrap gap-3">
-            {{ range $interests }}
-            {{ $interest := strings.TrimSpace (printf "%v" .) }}
-            {{ if $interest }}
-            <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
-                           hover:bg-primary-100 
-                           dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                           transition-all duration-200 cursor-default">
-              {{ $interest | markdownify | emojify }}
-            </span>
+          {{ end }}
+          {{/* Education Column */}}
+          {{ if gt (len $education) 0 }}
+          <div>
+            {{ $education_heading := i18n "education" | default "Education" }}
+            {{ $education_heading_raw := index $headings "education" }}
+            {{ if eq (printf "%T" $education_heading_raw) "string" }}
+              {{ $education_heading_raw = strings.TrimSpace $education_heading_raw }}
+              {{ if ne $education_heading_raw "" }}
+                {{ $education_heading = $education_heading_raw }}
+              {{ end }}
             {{ end }}
-            {{ end }}
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white tracking-tight mb-4">{{ $education_heading | markdownify }}</h3>
+            <ul class="space-y-4 text-base text-gray-700 dark:text-gray-300">
+              {{ range $education }}
+              {{ if reflect.IsMap . }}
+              {{ $degree := "" }}
+              {{ $degreeRaw := index . "degree" | default (index . "area") }}
+              {{ if ne $degreeRaw nil }}{{ $degree = printf "%v" $degreeRaw }}{{ end }}
+              {{ $institution := "" }}
+              {{ with index . "institution" }}{{ $institution = printf "%v" . }}{{ end }}
+              {{ $year := "" }}
+              {{ with index . "year" }}{{ $year = printf "%v" . }}{{ end }}
+              <li class="flex items-start gap-2">
+                <span class="mt-1">🎓</span>
+                <div>
+                  {{ if $degree }}<span class="font-semibold text-gray-900 dark:text-white">{{ $degree }}</span>{{ if $year }}, {{ $year }}{{ end }}{{ end }}
+                  {{ if $institution }}<br><span class="text-gray-600 dark:text-gray-400">{{ $institution }}</span>{{ end }}
+                </div>
+              </li>
+              {{ end }}
+              {{ end }}
+            </ul>
           </div>
+          {{ end }}
         </div>
         {{ end }}
       </div>
