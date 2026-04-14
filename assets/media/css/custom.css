@@ -73,3 +73,6 @@ section h2 {
   font-weight: 700 !important;
   color: #1a1a1a !important;
 }
+
+/* ── Bio text: remove theme's 680px width cap ── */
+.bio-text { max-width: none !important; width: 100% !important; }
