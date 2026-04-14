@@ -10,7 +10,14 @@ name:
   pronouns: ''
 role: PhD Student of Health Geography
 bio: |
-  I am a PhD student at the [WorldPop](https://www.worldpop.org/), [University of Southampton](https://www.southampton.ac.uk/). My research focuses on human behaviours and population health. I combined geospatial data sciences with epidemiology and computational social science for an integrated view of environmental and policy impacts on human society.
+  I am a PhD student at the [WorldPop](https://www.worldpop.org/), [University of Southampton](https://www.southampton.ac.uk/). 
+  My research focuses on how environmental and policy changes shape human behaviours and population health, bridging 
+  geospatial data sciences, epidemiology, and computational social science. 
+  
+  My current work focuses on two themes: 1) **Human behaviours and Disease dynamics**, examining how human mobility and 
+  health behaviours shape infectious disease transmission, and how public health policies affect human behaviours and mental well-being. 
+  2) **Health and Environment**, which investigates the impacts of climate and environmental exposure, including floods, tropical cyclones, 
+  and wildfires, on human mobility and population health.
 
 affiliations:
   - name: WorldPop
