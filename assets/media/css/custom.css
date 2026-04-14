@@ -74,5 +74,7 @@ section h2 {
   color: #1a1a1a !important;
 }
 
-/* ── Bio text: remove theme's 680px width cap ── */
-.resume-biography .bio-text { max-width: none !important; width: 100% !important; }
+/* ── Larger font on publication listing ── */
+.page-body {
+  font-size: 1.125rem !important;
+}
