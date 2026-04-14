@@ -75,4 +75,4 @@ section h2 {
 }
 
 /* ── Bio text: remove theme's 680px width cap ── */
-.bio-text { max-width: none !important; width: 100% !important; }
+.resume-biography .bio-text { max-width: none !important; width: 100% !important; }
