@@ -340,7 +340,7 @@
         {{ end }}
         {{ with $bio_content }}
         <div class="mb-12">
-          <style>.bio-text { max-width: none !important; width: 100% !important; } .bio-text p { margin-bottom: 1.5rem; }</style>
+          <style>.bio-text { max-width: none !important; width: 100% !important; } .bio-text p { margin-bottom: 1.5rem; } .bio-text a { color: #7c3aed; }</style>
           <div class="text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed" style="font-family: Georgia, 'Times New Roman', serif;">
             <div class="bio-text" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
               {{ . }}
