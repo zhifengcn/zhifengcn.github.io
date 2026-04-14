@@ -339,13 +339,6 @@
           {{ with $profile.bio }}{{ $bio_content = printf "%v" . | emojify | $page.RenderString }}{{ end }}
         {{ end }}
         {{ with $bio_content }}
-        <div class="mb-12">
-          <div class="text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed" style="font-family: Georgia, 'Times New Roman', serif;">
-            <div class="bio-text" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
-              {{ . }}
-            </div>
-          </div>
-        </div>
         {{ end }}
 
         {{/* Interests & Education Side-by-Side */}}
