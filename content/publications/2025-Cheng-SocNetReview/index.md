@@ -47,8 +47,8 @@ links:
   - type: pdf
     url: SocNetReview.pdf
   - type: DOI
-    url: [https://www.sciencedirect.com/science/article/abs/pii/S0959378025001487](https://link.springer.com/article/10.1186/s40249-025-01378-6)
-
+    url: https://link.springer.com/article/10.1186/s40249-025-01378-6
+    
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
