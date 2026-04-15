@@ -1,26 +1,21 @@
 ---
 title: 'Projects'
-date: 2024-05-19
+date: ''
 type: landing
 
 design:
   # Section spacing
-  spacing: '5rem'
+  spacing: '2rem'
 
 # Page sections
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Projects
       filters:
         folders:
           - projects
     design:
-      view: showcase
-      fill_image: false
+      view: community/showcase
       columns: 1
-      show_date: false
-      show_read_time: false
-      show_read_more: false
 ---
