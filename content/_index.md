@@ -37,6 +37,11 @@ sections:
     id: publications
     content:
       title: Publications
+      text: ""
+      count: 5
+      button:
+        text: View All Publications →
+        url: /publications/
       filters:
         folders:
           - publications
