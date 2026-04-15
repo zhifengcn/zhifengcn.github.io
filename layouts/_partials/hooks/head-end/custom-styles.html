@@ -91,8 +91,9 @@ article.prose h1 {
   position: relative !important;
   aspect-ratio: auto !important;   /* let the image decide the height */
   overflow: visible !important;
+  height: auto !important;          /* add this — clear any height constraint */
 }
-
+  
 /* Image: natural proportions, no cropping */
 #section-collection [role="article"] .overflow-hidden img {
   position: relative !important;   /* break out of absolute positioning */
@@ -106,7 +107,6 @@ article.prose h1 {
   display: block !important;
 }
   
-
 /* Text side fills remaining space */
 #section-collection [role="article"] .p-8 {
   flex: 1 !important;
