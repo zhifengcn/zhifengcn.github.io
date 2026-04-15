@@ -32,6 +32,17 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  
+  - block: collection
+    id: publications
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publications
+    design:
+      view: citation
+  
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
@@ -52,13 +63,4 @@ sections:
         # Card background color (CSS class)
         css_class: 'bg-primary-300 dark:bg-primary-700'
         css_style: ''
-  - block: collection
-    id: publications
-    content:
-      title: Publications
-      filters:
-        folders:
-          - publications
-    design:
-      view: citation
 ---
