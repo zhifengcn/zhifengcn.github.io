@@ -80,6 +80,6 @@ section h2 {
 }
 
 /* ── Publication title links in blue ── */
-.page-body article a {
+.pub-list-item.view-citation a.underline {
   color: #6d28d9 !important;
 }
