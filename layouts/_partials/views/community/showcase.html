@@ -1,0 +1,56 @@
+{{/* Custom Showcase View for Projects */}}
+{{/* Place at: layouts/partials/views/community/showcase.html */}}
+
+{{ $item := . }}
+{{ $title := $item.Title }}
+{{ $summary := $item.Params.summary | default $item.Summary }}
+{{ $image := $item.Params.image.filename | default "" }}
+{{ $link := $item.RelPermalink }}
+{{ $external_link := $item.Params.external_link | default "" }}
+{{ $href := cond (ne $external_link "") $external_link $link }}
+{{ $tags := $item.Params.tags | default slice }}
+
+{{/* Try to get featured image */}}
+{{ $featured := "" }}
+{{ $featured_img := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+{{ if $featured_img }}
+  {{ $featured = $featured_img }}
+{{ else }}
+  {{ $featured_img = ($item.Resources.ByType "image").GetMatch "*thumbnail*" }}
+  {{ if $featured_img }}
+    {{ $featured = $featured_img }}
+  {{ end }}
+{{ end }}
+
+<div class="showcase-item" style="display: flex; gap: 2.5rem; align-items: center; padding: 2rem 0; border-bottom: 1px solid #e5e7eb;">
+  {{/* Image */}}
+  {{ if $featured }}
+  <div class="showcase-image" style="flex: 0 0 45%; max-width: 45%;">
+    <a href="{{ $href }}">
+      <img src="{{ $featured.RelPermalink }}" alt="{{ $title }}" 
+           style="width: 100%; height: auto; border-radius: 4px;">
+    </a>
+  </div>
+  {{ end }}
+
+  {{/* Text content */}}
+  <div class="showcase-text" style="flex: 1;">
+    <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0 0 0.75rem 0; line-height: 1.3;">
+      <a href="{{ $href }}" style="color: #111; text-decoration: none;">
+        {{ $title }}
+      </a>
+    </h3>
+    {{ with $summary }}
+    <p style="font-size: 1rem; color: #555; line-height: 1.7; margin: 0;">
+      {{ . | markdownify }}
+    </p>
+    {{ end }}
+    {{ if gt (len $tags) 0 }}
+    <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      {{ range $tags }}
+      <span style="font-size: 0.8rem; color: #2563eb; background: #eff6ff; padding: 0.2rem 0.6rem; border-radius: 4px;">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
