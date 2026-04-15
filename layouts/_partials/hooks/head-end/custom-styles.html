@@ -29,7 +29,8 @@
   font-size: 1.1rem;
   color: #6d28d9;
 }
-  
+
+/* ────────────── Publication page ────────────── */
 /* ── Page title spacing ── */
 .page-body h1 {
   margin-top: 3rem !important;
@@ -67,7 +68,7 @@
   margin-top: 0.5rem !important;
 }
 
-/* ── Showcase-style project cards ── */
+/* ────────────────── Showcase-style project cards ────────────────── */
 /* Widen the container */
 #section-collection .max-w-\[65ch\] {
   max-width: 70rem !important;
@@ -88,8 +89,8 @@
 
 /* Image container: fixed width, restore visibility */
 #section-collection [role="article"] .overflow-hidden {
-  flex: 0 0 45% !important;
-  max-width: 45% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
   border-radius: 4px !important;
   position: relative !important;
   aspect-ratio: 3/2 !important;
@@ -98,9 +99,9 @@
 /* Make sure img fills the container */
 #section-collection [role="article"] .overflow-hidden img {
   position: absolute !important;
-  width: 100% !important;
+  width: auto !important;
   height: 100% !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
 }
 
 /* Text side fills remaining space */
@@ -115,8 +116,39 @@
   gap: 0 !important;
 }
 
+/* Hide date, read time, and read more */
+#section-collection [role="article"] .text-sm.text-zinc-500,
+#section-collection [role="article"] time,
+#section-collection [role="article"] [href*="Read more"],
+#section-collection [role="article"] a:has(> span) {
+  display: none !important;
+}
+
+/* Also hide the divider line above date */
+#section-collection [role="article"] .border-t {
+  display: none !important;
+}
+
 /* Alternate image position */
 #section-collection [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
+}
+
+/* ── Projects page font sizes to match Publications ── */
+/* Page title "Projects" */
+#section-collection article h1,
+#section-collection h1 {
+  font-size: 2.5rem !important;
+}
+
+/* Individual project titles */
+#section-collection [role="article"] h3,
+#section-collection [role="article"] h2 {
+  font-size: 1.25rem !important;
+}
+
+/* Project description text */
+#section-collection [role="article"] p {
+  font-size: 1.25rem !important;
 }
 </style>
