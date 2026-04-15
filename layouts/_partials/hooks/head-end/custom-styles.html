@@ -95,11 +95,17 @@ article.prose h1 {
 
 /* Image: natural proportions, no cropping */
 #section-collection [role="article"] .overflow-hidden img {
-  position: relative !important;
-  width: 100% !important;
-  height: auto !important;
+  position: relative !important;   /* break out of absolute positioning */
+  inset: auto !important;          /* clear the inset: 0 */
+  width: auto !important;          /* don't stretch full width */
+  height: auto !important;         /* natural height */
+  max-width: 100% !important;      /* but don't overflow container */
+  max-height: 400px !important;    /* optional cap so tall images don't dominate */
+  margin: 0 auto !important;       /* center horizontally */
   object-fit: contain !important;
+  display: block !important;
 }
+  
 
 /* Text side fills remaining space */
 #section-collection [role="article"] .p-8 {
