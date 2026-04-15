@@ -83,15 +83,36 @@
   background: transparent !important;
   border-bottom: 1px solid #e5e7eb !important;
   padding: 2rem 0 !important;
+  overflow: visible !important;
 }
 
-/* Image: fixed width on the left */
-#section-collection [role="article"] .aspect-\[16\/9\] {
-  aspect-ratio: auto !important;
+/* Image container: fixed width, restore visibility */
+#section-collection [role="article"] .overflow-hidden {
   flex: 0 0 45% !important;
   max-width: 45% !important;
   border-radius: 4px !important;
-  overflow: hidden !important;
+  position: relative !important;
+  aspect-ratio: 3/2 !important;
+}
+
+/* Make sure img fills the container */
+#section-collection [role="article"] .overflow-hidden img {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Text side fills remaining space */
+#section-collection [role="article"] .p-8 {
+  flex: 1 !important;
+}
+
+/* Prevent vertical overlap */
+#section-collection .grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
 }
 
 /* Alternate image position */
