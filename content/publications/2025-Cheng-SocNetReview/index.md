@@ -24,7 +24,7 @@ publication_types: ["article-journal"]
 publication: "*Infectious Diseases of Poverty, 14*(123)"
 publication_short: ""
 
-abstract: Background
+abstract: "Background
 The interconnectedness of human society in this modern world can transform localised outbreaks into global pandemics, underscoring the pivotal roles of social, mobility and contact networks in shaping infectious disease dynamics. Although these networks share analogous contagion principles, they are often studied in isolation, hindering the incorporation of behavioural, informational, and epidemiological processes into disease models. This review synthesises current research on the interplay between social, mobility and contact networks in health behaviour contagion and infectious disease transmission.
 
 Methods
@@ -34,7 +34,7 @@ Results
 Our review finds that each network type plays a distinct yet interconnected role in shaping behaviours and disease dynamics. Social networks, comprising both online and offline interpersonal relationships, facilitate the dissemination of health information and influence behavioural responses to public health interventions. Concurrently, mobility and contact networks govern the spatiotemporal pathways of pathogen transmission, as demonstrated in recent pandemics. While traditional population-level models often overlook individual discrepancies and social network effects, significant efforts have been made through developing individual-level simulation-based models that integrate behavioural dynamics. With emerging new data sources and advanced computational techniques, two promising approaches—multiplex network analysis and generative agent-based modelling—offer frameworks for integrating the complex interdependencies among social, mobility and contact networks into epidemic dynamics estimation.
 
 Conclusions
-This review highlights the theoretical and methodological advances in network-based infectious disease modelling and identifies critical knowledge and research gaps. Future research should prioritise integrating multi-source behavioural and spatial data, unifying modelling strategies, and developing scalable approaches for incorporating multilayer network data. The integrated approach will strengthen public health strategies, enabling equitable and effective interventions against emerging infections.
+This review highlights the theoretical and methodological advances in network-based infectious disease modelling and identifies critical knowledge and research gaps. Future research should prioritise integrating multi-source behavioural and spatial data, unifying modelling strategies, and developing scalable approaches for incorporating multilayer network data. The integrated approach will strengthen public health strategies, enabling equitable and effective interventions against emerging infections."
 
 # Summary. An optional shortened abstract.
 summary: ""
