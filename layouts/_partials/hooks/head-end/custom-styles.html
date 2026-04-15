@@ -68,23 +68,34 @@
 }
 
 /* ── Showcase-style project cards ── */
-#projects article {
+/* Widen the container */
+#section-collection .max-w-\[65ch\] {
+  max-width: 70rem !important;
+}
+
+/* Make cards horizontal */
+#section-collection [role="article"] {
   display: flex !important;
   flex-direction: row !important;
-  gap: 2rem !important;
   align-items: center !important;
-  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-bottom: 1px solid #e5e7eb !important;
   padding: 2rem 0 !important;
 }
 
-#projects article img {
+/* Image: fixed width on the left */
+#section-collection [role="article"] .aspect-\[16\/9\] {
+  aspect-ratio: auto !important;
+  flex: 0 0 45% !important;
   max-width: 45% !important;
-  height: auto !important;
   border-radius: 4px !important;
+  overflow: hidden !important;
 }
 
-/* Alternate image position on even items */
-#projects article:nth-child(even) {
+/* Alternate image position */
+#section-collection [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
 }
 </style>
