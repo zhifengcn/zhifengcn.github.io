@@ -14,6 +14,6 @@ sections:
         folders:
           - projects
     design:
-      view: community/showcase
+      view: card
       columns: 1
 ---
