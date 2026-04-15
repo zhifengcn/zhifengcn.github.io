@@ -87,20 +87,21 @@
   overflow: visible !important;
 }
 
-/* Image container: fixed width, restore visibility */
+/* Image container: show full image, no cropping */
 #section-collection [role="article"] .overflow-hidden {
-  flex: 0 0 50% !important;
+  flex: 0 0 50% !important;       /* image takes 45% width — change to 40% or 50% as needed */
   max-width: 50% !important;
   border-radius: 4px !important;
   position: relative !important;
-  aspect-ratio: 3/2 !important;
+  aspect-ratio: auto !important;   /* let the image decide the height */
+  overflow: visible !important;
 }
 
-/* Make sure img fills the container */
+/* Image: natural proportions, no cropping */
 #section-collection [role="article"] .overflow-hidden img {
-  position: absolute !important;
-  width: auto !important;
-  height: 100% !important;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
   object-fit: contain !important;
 }
 
