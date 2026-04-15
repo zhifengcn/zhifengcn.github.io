@@ -4,10 +4,8 @@ date: ''
 type: landing
 
 design:
-  # Section spacing
   spacing: '2rem'
 
-# Page sections
 sections:
   - block: collection
     content:
@@ -16,6 +14,6 @@ sections:
         folders:
           - projects
     design:
-      view: community/showcase
+      view: card
       columns: 1
 ---
