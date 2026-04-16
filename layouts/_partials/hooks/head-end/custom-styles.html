@@ -83,19 +83,21 @@ article.prose h1 {
   overflow: visible !important;
 }
 
-/* Image container: show full image, no cropping */
+/* ── Image container ── */
 #section-collection [role="article"] .overflow-hidden {
-  flex: 0 0 50% !important;       /* image takes 45% width — change to 40% or 50% as needed */
+  flex: 0 0 50% !important;
   max-width: 50% !important;
   border-radius: 4px !important;
-  aspect-ratio: 4/3 !important;   /* reasonable shape for the container */
-  overflow: hidden !important;    /* keep edges clean */
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  background: transparent !important;  /* remove the grey gradient */
 }
-  
-/* Image: natural proportions, no cropping */
+
+/* ── Image: contain, no crop ── */
 #section-collection [role="article"] .overflow-hidden img {
-  object-fit: contain !important;      /* show full image, no cropping */
-  object-position: center !important;  /* center it */
+  object-fit: contain !important;
+  object-position: center !important;
+  background: transparent !important;
 }
   
 /* Text side fills remaining space */
