@@ -126,16 +126,13 @@
 }
 
 /* Alternate image position */
-#projects [role="article"]:nth-child(even) {
+#projects [role="article"]:nth-child(even), 
 #section-collection [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
 }
 
 /* Hide date, read time, and read more */
-#projects [role="article"] .text-sm.text-zinc-500,
-#projects [role="article"] time,
-#projects [role="article"] [href*="Read more"],
-#projects [role="article"] a:has(> span), 
+#projects [role="article"] .pt-3,
 #section-collection [role="article"] .text-sm.text-zinc-500,
 #section-collection [role="article"] time,
 #section-collection [role="article"] [href*="Read more"],
@@ -154,7 +151,7 @@
   padding-top: 0rem !important;    /* remove from homepage */
 }
 
-#section-collection .max-w-prose .text-3xl {
+#projects .max-w-prose .text-3xl {
   font-size: 0rem !important;   /* remove from homepage */
 }
 
