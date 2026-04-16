@@ -99,7 +99,13 @@ article.prose h1 {
   object-fit: contain !important;
   object-position: center !important;
 }
-  
+
+/* ── Disable gradient overlay on hover ── */
+#section-collection [role="article"] .overflow-hidden > div {
+  opacity: 0 !important;              /* keeps the overlay permanently hidden */
+  pointer-events: none !important;    /* ensures it doesn't block clicks */
+}
+
 /* Text side fills remaining space */
 #section-collection [role="article"] .p-8 {
   flex: 1 !important;
