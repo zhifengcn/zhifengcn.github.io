@@ -46,7 +46,7 @@ sections:
         folders:
           - projects
     design:
-      view: showcase
+      view: card
   
   - block: collection
     id: publications
