@@ -34,7 +34,7 @@ sections:
         shape: circle # Options: circle (default), square, rounded
 
   - block: collection
-    id: section-collection
+    id: projects
     content:
       title: Projects
       text: ""
