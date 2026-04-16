@@ -67,11 +67,13 @@
 
 /* ────────────────── Showcase-style project cards ────────────────── */
 /* Widen the container */
+#projects .max-w-\[65ch\], 
 #section-collection .max-w-\[65ch\] {
   max-width: 80rem !important;
 }
 
 /* Make cards horizontal */
+#projects [role="article"], 
 #section-collection [role="article"] {
   display: flex !important;
   flex-direction: row !important;
@@ -85,6 +87,7 @@
 }
 
 /* ── Image container ── */
+#projects [role="article"] .overflow-hidden, 
 #section-collection [role="article"] .overflow-hidden {
   flex: 0 0 50% !important;
   max-width: 50% !important;
@@ -95,23 +98,27 @@
 }
 
 /* ── Image: contain, no crop ── */
+#projects [role="article"] .overflow-hidden img, 
 #section-collection [role="article"] .overflow-hidden img {
   object-fit: contain !important;
   object-position: center !important;
 }
 
 /* ── Disable gradient overlay on hover ── */
+#projects [role="article"] .overflow-hidden > div, 
 #section-collection [role="article"] .overflow-hidden > div {
   opacity: 0 !important;              /* keeps the overlay permanently hidden */
   pointer-events: none !important;    /* ensures it doesn't block clicks */
 }
 
 /* Text side fills remaining space */
+#projects [role="article"] .p-8, 
 #section-collection [role="article"] .p-8 {
   flex: 1 !important;
 }
 
 /* Prevent vertical overlap */
+#projects .grid, 
 #section-collection .grid {
   display: flex !important;
   flex-direction: column !important;
@@ -119,11 +126,16 @@
 }
 
 /* Alternate image position */
+#projects [role="article"]:nth-child(even) {
 #section-collection [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
 }
 
 /* Hide date, read time, and read more */
+#projects [role="article"] .text-sm.text-zinc-500,
+#projects [role="article"] time,
+#projects [role="article"] [href*="Read more"],
+#projects [role="article"] a:has(> span), 
 #section-collection [role="article"] .text-sm.text-zinc-500,
 #section-collection [role="article"] time,
 #section-collection [role="article"] [href*="Read more"],
@@ -132,11 +144,21 @@
 }
 
 /* Also hide the divider line above date */
+#projects [role="article"] .border-t, 
 #section-collection [role="article"] .border-t {
   display: none !important;
 }
 
 /* ── Projects page font sizes to match Publications ── */
+#projects {
+  padding-top: 0rem !important;    /* remove from homepage */
+}
+
+#section-collection .max-w-prose .text-3xl {
+  font-size: 0rem !important;   /* remove from homepage */
+}
+
+/* ── Projects page top padding ── */
 #section-collection {
   padding-top: 5.5rem !important;
 }
@@ -147,11 +169,13 @@
 }
 
 /* Individual project titles */
+#projects [role="article"] h3, 
 #section-collection [role="article"] h3 {
   font-size: 1.875rem !important;   /* text-3xl */
 }
 
 /* Project description text */
+#projects [role="article"] p, 
 #section-collection [role="article"] p {
   font-size: 1.125rem !important;   /* text-xl */
 }
