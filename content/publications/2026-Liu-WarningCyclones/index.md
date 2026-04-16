@@ -34,7 +34,7 @@ abstract: Multi-hazard early-warning systems (MHEWS) are critical for mitigating
 summary: ""
 
 tags: ""
-featured: false
+featured: true
 
 links:
   - type: pdf
