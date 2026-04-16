@@ -131,11 +131,10 @@
   flex-direction: row-reverse !important;
 }
 
-/* Hide date, read time, and read more */
+/* Hide Huge, date, read time, and read more */
 #projects [role="article"] .pt-3,
-#section-collection [role="article"] .text-sm.text-zinc-500,
-#section-collection [role="article"] time,
-#section-collection [role="article"] [href*="Read more"],
+#projects [role="article"] a:has(> span), 
+#section-collection [role="article"] .pt-3,
 #section-collection [role="article"] a:has(> span) {
   display: none !important;
 }
