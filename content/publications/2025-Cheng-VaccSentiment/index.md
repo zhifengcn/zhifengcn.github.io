@@ -27,7 +27,7 @@ abstract: Vaccination prevents not only the transmission of pathogens but also t
 summary: ""
 
 tags: ""
-featured: false
+featured: true
 
 links:
   - type: pdf
