@@ -32,6 +32,21 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+
+  - block: collection
+    id: projects
+    content:
+      title: Projects
+      text: ""
+      count: 3
+      button:
+        text: View All Projects →
+        url: /projects/
+      filters:
+        folders:
+          - projects
+    design:
+      view: showcase
   
   - block: collection
     id: publications
