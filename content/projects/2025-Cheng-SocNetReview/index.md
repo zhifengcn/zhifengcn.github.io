@@ -11,6 +11,7 @@ links:
 tag: ""
 ---
 **Abstract**
+
 Background
 
 The interconnectedness of human society in this modern world can transform localised outbreaks into global pandemics, underscoring the pivotal roles of social, mobility and contact networks in shaping infectious disease dynamics. Although these networks share analogous contagion principles, they are often studied in isolation, hindering the incorporation of behavioural, informational, and epidemiological processes into disease models. This review synthesises current research on the interplay between social, mobility and contact networks in health behaviour contagion and infectious disease transmission.
