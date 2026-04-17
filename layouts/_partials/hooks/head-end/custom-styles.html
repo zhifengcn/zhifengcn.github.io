@@ -190,6 +190,10 @@
 }
 
 /* ────────────────────── EACH Project page ──────────────────── */
+main.max-w-6xl {
+  max-width: 90rem !important;    /* adjust to taste */
+}
+
 main:has(.featured-image-wrapper) > h1 {
   order: 1 !important;
 }
@@ -198,7 +202,7 @@ main:has(.featured-image-wrapper) > .mt-4.mb-16 {
   order: 3 !important;
   margin-bottom: 0;
 }
-main > .mt-4.mb-16 .hb-attachment-link {
+main:has(.featured-image-wrapper) > .mt-4.mb-16 .hb-attachment-link {
   display: block !important;
   width: 100% !important;
   text-transform: none !important;
@@ -212,6 +216,8 @@ main:has(.featured-image-wrapper) > .article-header.featured-image-wrapper {
 
 main:has(.featured-image-wrapper) > .prose {
   order: 4 !important;
+  font-size: 1rem !important;         /* default is ~1.25rem from prose-xl */
+  line-height: 1.75 !important;
 }
 
 main:has(.featured-image-wrapper) > time {
