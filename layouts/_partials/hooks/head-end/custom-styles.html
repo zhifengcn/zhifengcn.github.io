@@ -196,10 +196,12 @@ main:has(.featured-image-wrapper) > h1 {
 
 main:has(.featured-image-wrapper) > .mt-4.mb-16 {
   order: 3 !important;
+  margin-bottom: calc(var(--spacing) * 4);
 }
 
 main:has(.featured-image-wrapper) > .article-header.featured-image-wrapper {
   order: 2 !important;
+  margin-bottom: calc(var(--spacing) * 4);
 }
 
 main:has(.featured-image-wrapper) > .prose {
@@ -208,6 +210,7 @@ main:has(.featured-image-wrapper) > .prose {
 
 main:has(.featured-image-wrapper) > time {
   order: 5 !important;
+  display: none !important;
 }
 
 main:has(.featured-image-wrapper) > .container {
