@@ -1,9 +1,9 @@
----
+<img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/4e758a93-c2b4-4d1b-a6b9-4e2cf48c373b" />---
 title: "Individuals’ self-disclosure on social media reveals sentiment and mental well-being benefits of vaccination"
 date: 2025-10-01
 links:
   - name: Paper
-    url: https://link.springer.com/article/10.1186/s40249-025-01378-6/
+    url: https://ssrn.com/abstract=6549978
 tag: ""
 ---
 **Abstract**
