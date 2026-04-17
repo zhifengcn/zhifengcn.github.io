@@ -2,11 +2,11 @@
 title: How multi-hazard early-warning systems benefit mobility resilience to tropical cyclones
 date: 2026-01-07
 links:
-  - type: WorldPop News
+  - name: WorldPop News
     url: https://www.worldpop.org/blog/the-data-behind-the-shield-how-early-warnings-and-population-maps-save-lives/
-  - type: Linkedin
+  - name: LinkedIn
     url: https://www.linkedin.com/posts/andy-tatem-b199b018_new-worldpop-paper-led-by-haiyan-liu-on-activity-7414583480728199168-X7zA/
-  - type: Paper
+  - name: Paper
     url: https://www.sciencedirect.com/science/article/pii/S0959378025001487
 tags: ''
 ---
