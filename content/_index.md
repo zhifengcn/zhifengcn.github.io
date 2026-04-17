@@ -55,7 +55,7 @@ sections:
       title: Publications
       text: ""
       count: 5
-      button:
+      archive:
         enable: true
         text: View All Publications →
         url: /publications/
