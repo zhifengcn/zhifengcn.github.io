@@ -188,4 +188,18 @@
 #section-collection [role="article"] p {
   font-size: 1.125rem !important;   /* text-xl */
 }
+
+/* ── Project page: move link below image ── */
+main > .mt-3:has(.hb-attachment-link) {
+  order: 2 !important;
+}
+
+main > .article-header.featured-image-wrapper {
+  order: 1 !important;
+}
+
+main:has(.featured-image-wrapper) {
+  display: flex !important;
+  flex-direction: column !important;
+}
 </style>
