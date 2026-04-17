@@ -52,7 +52,7 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Publications
+      title: Selected Publications
       text: ""
       count: 5
       archive:
