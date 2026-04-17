@@ -196,11 +196,16 @@ main:has(.featured-image-wrapper) > h1 {
 
 main:has(.featured-image-wrapper) > .mt-4.mb-16 {
   order: 3 !important;
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 0;
+}
+main > .mt-4.mb-16 .hb-attachment-link {
+  display: block !important;
+  width: 100% !important;
 }
 
 main:has(.featured-image-wrapper) > .article-header.featured-image-wrapper {
   order: 2 !important;
+  margin-top: calc(var(--spacing) * 16);
   margin-bottom: calc(var(--spacing) * 4);
 }
 
