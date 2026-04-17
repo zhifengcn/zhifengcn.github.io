@@ -1,6 +1,6 @@
 ---
 title: "Individuals’ self-disclosure on social media reveals sentiment and mental well-being benefits of vaccination"
-date: 2025-12-03
+date: 2025-10-01
 links:
   - name: Paper
     url: https://link.springer.com/article/10.1186/s40249-025-01378-6/
