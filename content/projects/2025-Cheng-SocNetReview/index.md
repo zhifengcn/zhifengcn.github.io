@@ -8,7 +8,6 @@ links:
     url: https://www.linkedin.com/posts/andy-tatem-b199b018_new-worldpop-review-paper-led-by-zhifeng-activity-7401956311870943232-Tyq-/
   - name: Paper
     url: https://link.springer.com/article/10.1186/s40249-025-01378-6/
-tags: ''
 ---
 **Abstract**
 Background
