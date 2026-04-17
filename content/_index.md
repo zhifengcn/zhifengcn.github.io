@@ -39,7 +39,8 @@ sections:
       title: Projects
       text: ""
       count: 3
-      button:
+      archive:
+        enable: true
         text: View All Projects →
         url: /projects/
       filters:
