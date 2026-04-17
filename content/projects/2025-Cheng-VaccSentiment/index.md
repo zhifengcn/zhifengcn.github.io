@@ -1,4 +1,4 @@
-<img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/4e758a93-c2b4-4d1b-a6b9-4e2cf48c373b" />---
+---
 title: "Individuals’ self-disclosure on social media reveals sentiment and mental well-being benefits of vaccination"
 date: 2025-10-01
 links:
