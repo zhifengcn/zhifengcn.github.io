@@ -190,12 +190,34 @@
 }
 
 /* ── Project page: move link below image ── */
-main > .mt-3:has(.hb-attachment-link) {
+main:has(.featured-image-wrapper) > h1 {
+  order: 1 !important;
+}
+
+main:has(.featured-image-wrapper) > .article-header.featured-image-wrapper {
   order: 2 !important;
 }
 
-main > .article-header.featured-image-wrapper {
-  order: 1 !important;
+main:has(.featured-image-wrapper) > .mt-4.mb-16 {
+  order: 3 !important;
+}
+
+main:has(.featured-image-wrapper) > .prose {
+  order: 4 !important;
+}
+
+main:has(.featured-image-wrapper) > time {
+  order: 5 !important;
+}
+
+main:has(.featured-image-wrapper) > .container {
+  order: 6 !important;
+}
+main:has(.featured-image-wrapper) > .container .section {
+  display: none !important;
+}
+main:has(.featured-image-wrapper) > .container .flex.pt-12.pb-4 {
+  display: none !important;
 }
 
 main:has(.featured-image-wrapper) {
