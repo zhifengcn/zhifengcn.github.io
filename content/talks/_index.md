@@ -14,4 +14,7 @@ sections:
       filters:
         folders:
           - talks
+    design:
+      view: compact
+      columns: 1
 ---
