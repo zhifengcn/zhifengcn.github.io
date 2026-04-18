@@ -46,6 +46,7 @@ sections:
       filters:
         folders:
           - projects
+        featured_only: true
     design:
       view: card
       fill_image: false
