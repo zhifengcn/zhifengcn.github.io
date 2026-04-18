@@ -37,7 +37,7 @@ sections:
     id: projects
     content:
       title: Projects
-      text: ""
+      text: "Selected Projects"
       count: 3
       archive:
         enable: true
