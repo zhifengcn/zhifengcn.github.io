@@ -13,6 +13,9 @@ main:
   - name: Talks
     url: /talks/
     weight: 13
+  - name: Slides
+    url: /slides/
+    weight: 14
   - name: Teaching
     url: /courses/
     weight: 40
