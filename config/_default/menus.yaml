@@ -15,7 +15,7 @@ main:
     weight: 13
   - name: blog
     url: /blog/
-    weight: 13
+    weight: 14
   - name: Teaching
     url: /courses/
     weight: 40
