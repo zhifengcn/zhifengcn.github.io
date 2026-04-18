@@ -36,8 +36,8 @@ sections:
   - block: collection
     id: projects
     content:
-      title: Projects
-      text: "Selected Projects"
+      title: Selected Projects
+      text: ""
       count: 3
       archive:
         enable: true
