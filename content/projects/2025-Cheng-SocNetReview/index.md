@@ -9,6 +9,7 @@ links:
   - name: Paper
     url: https://link.springer.com/article/10.1186/s40249-025-01378-6/
 tag: ""
+featured: true
 ---
 **Abstract**
 
