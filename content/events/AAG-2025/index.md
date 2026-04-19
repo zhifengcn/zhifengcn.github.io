@@ -5,8 +5,6 @@ event: 2025 AAG Annual Meeting
 event_url: https://www.aag.org/events/aag2025/
 location: Detroit, US
 summary: |2025 AAG Annual Meeting
-
 March 27, 2025
-
 Detroit, US
 ---
