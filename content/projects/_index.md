@@ -8,6 +8,7 @@ design:
 
 sections:
   - block: collection
+    id: projects
     content:
       title: Projects
       count: 0
