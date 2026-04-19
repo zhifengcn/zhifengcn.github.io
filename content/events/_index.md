@@ -9,7 +9,7 @@ design:
 sections:
   - block: collection
     content:
-      title: Events
+      title: Talks
       count: 0
       filters:
         folders:
