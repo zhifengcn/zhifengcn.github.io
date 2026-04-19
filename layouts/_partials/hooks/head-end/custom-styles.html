@@ -87,14 +87,16 @@
 
 /* ────────────────── Showcase-style project cards ────────────────── */
 /* Widen the container */
-#projects-home .max-w-\[65ch\], 
-#projects .max-w-\[65ch\] {
+#talks .max-w-\[65ch\], 
+#projects .max-w-\[65ch\], 
+#projects-home .max-w-\[65ch\] {
   max-width: 80rem !important;
 }
 
 /* Make cards horizontal */
-#projects-home [role="article"], 
-#projects [role="article"] {
+#talks [role="article"], 
+#projects [role="article"], 
+#projects-home [role="article"] {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -115,8 +117,9 @@
 }
 
 /* ── Image container ── */
-#projects-home [role="article"] .overflow-hidden, 
-#projects [role="article"] .overflow-hidden {
+#talks [role="article"] .overflow-hidden, 
+#projects [role="article"] .overflow-hidden, 
+#projects-home [role="article"] .overflow-hidden {
   flex: 0 0 50% !important;
   max-width: 50% !important;
   border-radius: 4px !important;
@@ -126,50 +129,58 @@
 }
 
 /* ── Image: contain, no crop ── */
-#projects-home [role="article"] .overflow-hidden img, 
-#projects [role="article"] .overflow-hidden img {
+#talks [role="article"] .overflow-hidden img, 
+#projects [role="article"] .overflow-hidden img, 
+#projects-home [role="article"] .overflow-hidden img {
   object-fit: contain !important;
   object-position: center !important;
 }
 
 /* ── Disable gradient overlay on hover ── */
-#projects-home [role="article"] .overflow-hidden > div, 
-#projects [role="article"] .overflow-hidden > div {
+#talks [role="article"] .overflow-hidden > div, 
+#projects [role="article"] .overflow-hidden > div, 
+#projects-home [role="article"] .overflow-hidden > div {
   opacity: 0 !important;              /* keeps the overlay permanently hidden */
   pointer-events: none !important;    /* ensures it doesn't block clicks */
 }
 
 /* Text side fills remaining space */
-#projects-home [role="article"] .p-8, 
-#projects [role="article"] .p-8 {
+#talks [role="article"] .p-8, 
+#projects [role="article"] .p-8, 
+#projects-home [role="article"] .p-8 {
   flex: 1 !important;
 }
 
 /* Prevent vertical overlap */
-#projects-home .grid, 
-#projects .grid {
+#talks .grid, 
+#projects .grid, 
+#projects-home .grid {
   display: flex !important;
   flex-direction: column !important;
   gap: 0 !important;
 }
 
 /* Alternate image position */
-#projects-home [role="article"]:nth-child(even), 
-#projects [role="article"]:nth-child(even) {
+#talks [role="article"]:nth-child(even), 
+#projects [role="article"]:nth-child(even), 
+#projects-home [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
 }
 
 /* Hide Huge, date, read time, and read more */
-#projects-home [role="article"] .pt-3,
-#projects-home [role="article"] a:has(> span), 
+#talks [role="article"] .pt-3,
+#talks [role="article"] a:has(> span), 
 #projects [role="article"] .pt-3,
-#projects [role="article"] a:has(> span) {
+#projects [role="article"] a:has(> span), 
+#projects-home [role="article"] .pt-3,
+#projects-home [role="article"] a:has(> span) {
   display: none !important;
 }
 
 /* Also hide the divider line above date */
-#projects-home [role="article"] .border-t, 
-#projects [role="article"] .border-t {
+#talks [role="article"] .border-t, 
+#projects [role="article"] .border-t, 
+#projects-home [role="article"] .border-t {
   display: none !important;
 }
 
@@ -184,14 +195,16 @@
 /* }
 
 /* Individual project titles */
-#projects-home [role="article"] h3, 
-#projects [role="article"] h3 {
+#talks [role="article"] h3, 
+#projects [role="article"] h3, 
+#projects-home [role="article"] h3 {
   font-size: 1.5rem !important;   /* text-2xl */
 }
 
 /* Project description text */
-#projects-hone [role="article"] p, 
-#projects [role="article"] p {
+#talks [role="article"] p, 
+#projects [role="article"] p, 
+#projects-home [role="article"] p {
   font-size: 1.125rem !important;   /* text-xl */
 }
 
