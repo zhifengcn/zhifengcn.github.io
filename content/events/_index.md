@@ -15,6 +15,6 @@ sections:
         folders:
           - events
     design:
-      view: compact
+      view: card
       columns: 1
 ---
