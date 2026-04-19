@@ -7,8 +7,6 @@ sections:
     content:
       title: "Teaching Assistant"
       text: |
-        ### Teaching Assistant
-
         **Fall 2024**
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
