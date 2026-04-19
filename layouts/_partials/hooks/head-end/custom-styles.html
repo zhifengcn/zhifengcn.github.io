@@ -14,7 +14,7 @@
   }
 }
 
-#section-resume-biography-3 {
+#resume-home {
   padding-top: 4rem !important;
 }
   
@@ -23,18 +23,18 @@
 }
 
 /* ── "See all" button styling ── */
-#projects .mt-10 a, 
+#projects-home .mt-10 a, 
 #publications .mt-10 a {
   font-size: 1.1rem !important;
   color: #6d28d9 !important;
   border-color: #6d28d9 !important;
 }
   
-#projects {
+#projects-home {
   padding-top: 0rem !important;    /* remove from homepage */
 }
 
-#projects .max-w-prose .text-3xl {
+#projects-home .max-w-prose .text-3xl {
   /* font-size: 0rem !important; */
   content: "Selected Projects"
 }
@@ -87,14 +87,14 @@
 
 /* ────────────────── Showcase-style project cards ────────────────── */
 /* Widen the container */
-#projects .max-w-\[65ch\], 
-#section-collection .max-w-\[65ch\] {
+#projects-home .max-w-\[65ch\], 
+#projects .max-w-\[65ch\] {
   max-width: 80rem !important;
 }
 
 /* Make cards horizontal */
-#projects [role="article"], 
-#section-collection [role="article"] {
+#projects-home [role="article"], 
+#projects [role="article"] {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -105,18 +105,18 @@
   padding: 1rem !important;
   overflow: visible !important;
 }
-#projects [role="article"] {
+#projects-home [role="article"] {
   border-bottom: none !important;
 }
 
 /* Alternate grey background */
-#projects [role="article"]:nth-child(odd) {
+#projects-home [role="article"]:nth-child(odd) {
   background-color: #f8fafc !important;
 }
 
 /* ── Image container ── */
-#projects [role="article"] .overflow-hidden, 
-#section-collection [role="article"] .overflow-hidden {
+#projects-home [role="article"] .overflow-hidden, 
+#projects [role="article"] .overflow-hidden {
   flex: 0 0 50% !important;
   max-width: 50% !important;
   border-radius: 4px !important;
@@ -126,72 +126,72 @@
 }
 
 /* ── Image: contain, no crop ── */
-#projects [role="article"] .overflow-hidden img, 
-#section-collection [role="article"] .overflow-hidden img {
+#projects-home [role="article"] .overflow-hidden img, 
+#projects [role="article"] .overflow-hidden img {
   object-fit: contain !important;
   object-position: center !important;
 }
 
 /* ── Disable gradient overlay on hover ── */
-#projects [role="article"] .overflow-hidden > div, 
-#section-collection [role="article"] .overflow-hidden > div {
+#projects-home [role="article"] .overflow-hidden > div, 
+#projects [role="article"] .overflow-hidden > div {
   opacity: 0 !important;              /* keeps the overlay permanently hidden */
   pointer-events: none !important;    /* ensures it doesn't block clicks */
 }
 
 /* Text side fills remaining space */
-#projects [role="article"] .p-8, 
-#section-collection [role="article"] .p-8 {
+#projects-home [role="article"] .p-8, 
+#projects [role="article"] .p-8 {
   flex: 1 !important;
 }
 
 /* Prevent vertical overlap */
-#projects .grid, 
-#section-collection .grid {
+#projects-home .grid, 
+#projects .grid {
   display: flex !important;
   flex-direction: column !important;
   gap: 0 !important;
 }
 
 /* Alternate image position */
-#projects [role="article"]:nth-child(even), 
-#section-collection [role="article"]:nth-child(even) {
+#projects-home [role="article"]:nth-child(even), 
+#projects [role="article"]:nth-child(even) {
   flex-direction: row-reverse !important;
 }
 
 /* Hide Huge, date, read time, and read more */
+#projects-home [role="article"] .pt-3,
+#projects-home [role="article"] a:has(> span), 
 #projects [role="article"] .pt-3,
-#projects [role="article"] a:has(> span), 
-#section-collection [role="article"] .pt-3,
-#section-collection [role="article"] a:has(> span) {
+#projects [role="article"] a:has(> span) {
   display: none !important;
 }
 
 /* Also hide the divider line above date */
-#projects [role="article"] .border-t, 
-#section-collection [role="article"] .border-t {
+#projects-home [role="article"] .border-t, 
+#projects [role="article"] .border-t {
   display: none !important;
 }
 
 /* ── Projects page top padding ── */
-#section-collection {
+#projects {
   padding-top: 5.5rem !important;
 }
 
 /* Page title "Projects" */
-#section-collection .max-w-prose .text-3xl {
-  font-size: 3rem !important;   /* text-5xl */
-}
+/* #projects .max-w-prose .text-3xl {
+/*   font-size: 3rem !important;   /* text-5xl */
+/* }
 
 /* Individual project titles */
-#projects [role="article"] h3, 
-#section-collection [role="article"] h3 {
+#projects-home [role="article"] h3, 
+#projects [role="article"] h3 {
   font-size: 1.5rem !important;   /* text-2xl */
 }
 
 /* Project description text */
-#projects [role="article"] p, 
-#section-collection [role="article"] p {
+#projects-hone [role="article"] p, 
+#projects [role="article"] p {
   font-size: 1.125rem !important;   /* text-xl */
 }
 
