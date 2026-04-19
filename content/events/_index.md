@@ -8,7 +8,6 @@ design:
 
 sections:
   - block: collection
-    id: talks
     content:
       title: Talks
       count: 0
