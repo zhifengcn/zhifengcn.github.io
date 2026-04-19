@@ -6,8 +6,7 @@ sections:
     content:
       title: ""
       text: |
-
-        ###Teaching Assistant
+        ### Teaching Assistant
 
         **Fall 2024**
 
