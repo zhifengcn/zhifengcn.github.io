@@ -4,20 +4,28 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: Teaching
+      title: ""
       text: |
         ### Teaching Assistant
 
         **Fall 2024**
 
-        GEOG 2xxx Population and Environment; [Syllabus](#)
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>GEOG 2xxx Population and Environment</span>
+          <span><a href="#">Syllabus</a></span>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>GEOG 3xxx Health Geography</span>
+          <span><a href="#">Syllabus</a></span>
+        </div>
 
         **Spring 2024**
 
-        GEOG 1xxx Introduction to GIS; [Syllabus](#)
-    design:
-      columns: 2
-
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>GEOG 1xxx Introduction to GIS</span>
+          <span><a href="#">Syllabus</a></span>
+        </div>
 ---
 
 <!--
