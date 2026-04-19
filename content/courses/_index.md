@@ -11,31 +11,31 @@ sections:
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <span>Global Sustainability Challenges (Bachelor course)</span>
-          <span>Seminar</span>
+          <span style="min-width: 180px; text-align: right; flex-shrink: 0; white-space: nowrap;">Seminar</span>
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <span>Environment and Health (Bachelor course)</span>
-          <span>Lecture assistant</span>
+          <span style="min-width: 180px; text-align: right; flex-shrink: 0; white-space: nowrap;">Lecture assistant</span>
         </div>
     
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <span>Exploring Urban and Natural Environments (Bachelor course)</span>
-          <span>Computer workshop</span>
+          <span style="min-width: 180px; text-align: right; flex-shrink: 0; white-space: nowrap;">Computer workshop</span>
         </div>
 
         **Fall 2024**
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <span>Core skills in GIS (Master course)</span>
-          <span>Computer workshop</span>
+          <span style="min-width: 180px; text-align: right; flex-shrink: 0; white-space: nowrap;">Computer workshop</span>
         </div>
     
         **Fall 2023**
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <span>Introductory Geographic Information Systems (Bachelor course)</span>
-          <span>Computer workshop</span>
+          <span style="min-width: 180px; text-align: right; flex-shrink: 0; white-space: nowrap;">Computer workshop</span>
         </div>
 ---
 
