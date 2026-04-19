@@ -11,6 +11,7 @@ design:
 
 sections:
   - block: resume-biography-3
+    id: resume-home
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
@@ -34,7 +35,7 @@ sections:
         shape: circle # Options: circle (default), square, rounded
 
   - block: collection
-    id: projects
+    id: projects-home
     content:
       title: Selected Projects
       text: ""
