@@ -196,8 +196,12 @@ main:has(.featured-image-wrapper) > h1 {
   order: 1 !important;
 }
 
+main:has(.featured-image-wrapper) > .max-w-prose {
+  order: 2 !important;
+}
+
 main:has(.featured-image-wrapper) > .mt-4.mb-16 {
-  order: 3 !important;
+  order: 4 !important;
   margin-bottom: 0;
 }
 main:has(.featured-image-wrapper) > .mt-4.mb-16 .hb-attachment-link {
@@ -207,23 +211,23 @@ main:has(.featured-image-wrapper) > .mt-4.mb-16 .hb-attachment-link {
 }
 
 main:has(.featured-image-wrapper) > .article-header.featured-image-wrapper {
-  order: 2 !important;
+  order: 3 !important;
   margin-top: calc(var(--spacing) * 12);
   margin-bottom: calc(var(--spacing) * 4);
 }
 
 main:has(.featured-image-wrapper) > .prose {
-  order: 4 !important;
+  order: 5 !important;
   font-size: 1rem !important;         /* default is ~1.25rem from prose-xl */
 }
 
 main:has(.featured-image-wrapper) > time {
-  order: 5 !important;
+  order: 6 !important;
   display: none !important;
 }
 
 main:has(.featured-image-wrapper) > .container {
-  order: 6 !important;
+  order: 7 !important;
 }
 main > .container.prose .flex.pt-12.pb-4 {
   display: none !important;
