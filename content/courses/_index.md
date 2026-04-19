@@ -3,9 +3,9 @@ title: Teaching Assistant
 type: landing
 sections:
   - block: markdown
+    id: teaching
     content:
       title: "Teaching Assistant"
-      id: teaching
       text: |
         ### Teaching Assistant
 
