@@ -4,5 +4,5 @@ date: 2026-03-19
 event: "2026 AAG Annual Meeting"
 event_url: "https://www.aag.org/events/aag2026/"
 location: "San Fransico, US"
-summary: "2026 AAG Annual Meeting\nMarch 19, 2026\nSan Fransico, US"
+summary: "2026 AAG Annual Meeting&#10;March 19, 2026&#10;San Fransico, US"
 ---
