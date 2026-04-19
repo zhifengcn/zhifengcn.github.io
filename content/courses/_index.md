@@ -7,23 +7,35 @@ sections:
     content:
       title: "Teaching Assistant"
       text: |
+        **Winter 2026**
+
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>Global Sustainability Challenges (Bachelor course)</span>
+          <span>Seminar</span>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>Environment and Health (Bachelor course)</span>
+          <span>Lecture assistant</span>
+        </div>
+    
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+          <span>Exploring Urban and Natural Environments (Bachelor course)</span>
+          <span>Computer workshop</span>
+        </div>
+
         **Fall 2024**
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
-          <span>GEOG 2xxx Population and Environment</span>
-          <span><a href="#">Syllabus</a></span>
+          <span>Core skills in GIS (Master course)</span>
+          <span>Computer workshop</span>
         </div>
+    
+        **Fall 2023**
 
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
-          <span>GEOG 3xxx Health Geography</span>
-          <span><a href="#">Syllabus</a></span>
-        </div>
-
-        **Spring 2024**
-
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
-          <span>GEOG 1xxx Introduction to GIS</span>
-          <span><a href="#">Syllabus</a></span>
+          <span>Introductory Geographic Information Systems (Bachelor course)</span>
+          <span>Computer workshop</span>
         </div>
 ---
 
