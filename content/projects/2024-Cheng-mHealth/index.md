@@ -3,7 +3,7 @@ title: "What Digital Mobile Health Systems Add to Infectious Disease Control? A 
 date: 2024-07-01
 links: ""
 tag: ""
-summary: What's the added value of digital mobile health (mHealth) in identifying and isolating people at risk compared with traditional contact tracing? How would infections spill over across regions with delayed or without mHealth?
+summary: What is the added value of digital mobile health (mHealth) in identifying and isolating people at risk compared with traditional contact tracing? How would infections spill over across regions with delayed or without mHealth?
 ---
 This project is led by Zhifeng Cheng, Chu He, and Shengjie Lai. We greatly appreciate the Jiangsu Centre for Disease Control and Prevention (CDC) for developing and operating the mHealth system, and for sharing the data.
 
