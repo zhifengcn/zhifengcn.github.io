@@ -8,7 +8,7 @@ links:
     url: https://www.linkedin.com/posts/andy-tatem-b199b018_new-worldpop-paper-led-by-haiyan-liu-on-activity-7414583480728199168-X7zA/
   - name: Paper
     url: https://www.sciencedirect.com/science/article/pii/S0959378025001487
-summary: To what extent does multi-hazard early warning help resist extreme weather? How would the combined effect of multi-level warnings perform when faced with tropical cyclones of different intensities?
+summary: To what extent does multi-hazard early warning help resist extreme weather? What is the combined effect of multi-level warnings when facing tropical cyclones of varying intensities?
 tags: ''
 featured: true
 ---
