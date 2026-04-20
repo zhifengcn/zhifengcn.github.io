@@ -6,6 +6,7 @@ links:
     url: https://ssrn.com/abstract=6549978
 tag: ""
 featured: true
+summary: What are the mental benefits of vaccination beyond its physical protection? How can we gain fast, large-scale evidence beyond traditional surveys? A quasi-experimental design on social media can provide an answer.
 ---
 This project was collaborated with Jianghao Wang, Yichun Fan, and Siqi Zheng
 
