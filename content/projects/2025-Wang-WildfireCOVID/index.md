@@ -3,6 +3,7 @@ title: "Unravelling Dual Roles of Human Activity in Shaping Global Fire Regimes"
 date: 2025-12-15
 links: ""
 tag: ""
+summary: How does human activity change wildfire patterns globally? How to disentangle the separated roles of human activity from the climate? A natural experiment would be a good solution.
 ---
 This project is leading by Jianghao Wang and Zhiyi Zhang
 
