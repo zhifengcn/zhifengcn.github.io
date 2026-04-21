@@ -366,7 +366,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
           {{/* Interests Column */}}
           {{ if gt (len $interests) 0 }}
-          <div class="md:col-span-5">
+          <div class="md:col-span-6">
             {{ $interests_heading := i18n "interests" | default "Interests" }}
             {{ $interests_heading_raw := index $headings "interests" }}
             {{ if eq (printf "%T" $interests_heading_raw) "string" }}
@@ -388,7 +388,7 @@
           {{ end }}
           {{/* Education Column */}}
           {{ if gt (len $education) 0 }}
-          <div class="md:col-span-7">
+          <div class="md:col-span-6">
             {{ $education_heading := i18n "education" | default "Education" }}
             {{ $education_heading_raw := index $headings "education" }}
             {{ if eq (printf "%T" $education_heading_raw) "string" }}
@@ -421,6 +421,11 @@
           </div>
           {{ end }}
         </div>
+        
+        {{/* Google Scholar citation */}}
+        <div class="mt-8 text-base text-gray-700 dark:text-gray-300" style="font-family: Georgia, 'Times New Roman', serif;">
+          <a href="https://scholar.google.com/citations?user=H8XEL2IAAAAJ&hl=en" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors" style="color: #6d28d9;">Google Scholar</a>
+        </div>        
         {{ end }}
       </div>
     </div>
