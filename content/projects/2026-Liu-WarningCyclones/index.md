@@ -1,5 +1,5 @@
 ---
-title: How multi-hazard early-warning systems benefit mobility resilience to tropical cyclones
+title: How Multi-Hazard Early-Warning Systems Benefit Mobility Resilience to Tropical Cyclones
 date: 2026-01-07
 links:
   - name: WorldPop News
