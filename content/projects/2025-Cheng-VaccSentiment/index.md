@@ -1,5 +1,5 @@
 ---
-title: "Individuals’ Self-disclosure on Social Media Reveals Sentiment and Mental Well-being Benefits of Vaccination"
+title: "Individuals’ Self-Disclosure on Social Media Reveals Sentiment and Mental Well-Being Benefits of Vaccination"
 date: 2025-10-01
 links:
   - name: Paper
