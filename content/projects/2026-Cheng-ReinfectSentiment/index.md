@@ -1,5 +1,5 @@
 ---
-title: Bidirectional impact of repeated respiratory infections on mental well-beings
+title: Bidirectional Impacts of Repeated Respiratory Infections on Mental Well-beings
 date: 2026-03-01
 links: ''
 summary: Will the mental disorder from reinfection diminish due to the previous infection experience, or will it accumulate? What roles do the number of infections, the time interval between the previous infection, and the transition between different diseases play in the process?
