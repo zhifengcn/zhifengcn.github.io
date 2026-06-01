@@ -39,7 +39,7 @@ sections:
     content:
       title: Selected Projects
       text: ""
-      count: 3
+      count: 4
       archive:
         enable: true
         text: View All Projects →
