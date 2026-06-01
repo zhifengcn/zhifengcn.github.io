@@ -1,5 +1,5 @@
 ---
-title: When geostatistics meets machine learning: how do they compete and complement in dynamic population mapping?
+title: "When geostatistics meets machine learning: how do they compete and complement in dynamic population mapping?"
 date: 2022-08-05
 links:
   - name: Paper - IJGIS
