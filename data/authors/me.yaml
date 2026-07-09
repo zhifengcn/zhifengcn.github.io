@@ -12,11 +12,12 @@ role: PhD Student in Health Geography
 bio: |
   I am a PhD student at the [WorldPop](https://www.worldpop.org/), [University of Southampton](https://www.southampton.ac.uk/). 
   My research focuses on how environmental and policy changes shape human behaviours and population health, bridging 
-  geospatial data sciences, epidemiology, and computational social science. 
+  geospatial data sciences, computational social science, and epidemiology. 
   
-  My current work focuses on two themes: 1) **Human behaviours and Disease dynamics**, examining how human mobility and 
-  health behaviours shape infectious disease transmission, and how public health policies affect human behaviours and mental well-being. 
-  2) **Health and Environment**, which investigates the impacts of climate and environmental exposure, including floods, tropical cyclones, 
+  My current work focuses on three themes: 1) **Spatiotemporal population dynamics**, mapping monthly, daily, to hourly population distribution by 
+  integrating mobile phone positioning and geospatial data. 2) **Digital epidemiology and mental well-being**, drawing on social media and digital 
+  traces data to examine how human mobility and health behaviours shape infectious disease transmission, and how health interventions affect mental well-being. 
+  3) **Health and Environment**, which investigates the impacts of climate and environmental exposure, including floods, tropical cyclones, 
   and wildfires, on human mobility and population health.
 
 affiliations:
@@ -24,9 +25,9 @@ affiliations:
   - name: University of Southampton
 
 interests:
-  - Causal effects of environmental exposure on population health 
-  - Human mobility in infectious disease dynamics and behavioural responses to health policies 
+  - Causal relationships between population health and environmental exposure or health policy
   - Human-centred AI applications for behavioural modelling and mental well-being
+  - Spatial, demographical, and individual heterogeneity in behaviours and health risks
 
 education:
   - degree: PhD in Geography
